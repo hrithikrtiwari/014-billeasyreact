@@ -28,15 +28,23 @@ const GalleryPage = () => {
             >
                 <Slider>
                     {images.map((url, index) => (
-                        <Slide index={index}>
-                            <ButtonBack>Back</ButtonBack>
-                            <img
-                                src={url["original"]}
-                                alt={"loading"}
-                                className="carousel-image"
-                            />
-                            <ButtonNext>Next</ButtonNext>
-                        </Slide>
+                        <>
+                            <Slide index={index}>
+                                ==================
+                                <br />
+                                Slide Number : {index}/{images.length}
+                                <br />
+                                ==================
+                                <br />
+                                <ButtonBack>Back</ButtonBack>
+                                <img
+                                    src={url["original"]}
+                                    alt={"loading"}
+                                    className="carousel-image"
+                                />
+                                <ButtonNext>Next</ButtonNext>
+                            </Slide>
+                        </>
                     ))}
                 </Slider>
             </CarouselProvider>
