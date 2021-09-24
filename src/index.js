@@ -17,7 +17,7 @@ ReactDOM.render(
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/gallery" component={GalleryPage} />
+                    <Route path="/gallery:index" component={GalleryPage} />
                 </Switch>
             </Router>
         </GalleryProvider>
