@@ -10,14 +10,17 @@ const Home = (props) => {
         });
     return (
         <>
-            {
-                data.map((arr) =>
+            <div class="gallery">
+                {data.map((val) => (
                     <>
-                    {arr["id"]}
-                    <br/>
+                        <img
+                            src={val["urls"]["thumb"]}
+                            alt={val["alt_description"]}
+                            title={val["description"]}
+                        />
                     </>
-                )
-            }
+                ))}
+            </div>
         </>
     );
 };
