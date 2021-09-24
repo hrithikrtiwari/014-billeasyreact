@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+import ImageComponent from "../components/image-component";
+
 
 const Home = (props) => {
     const [data, setData] = useState([]);
@@ -11,15 +13,7 @@ const Home = (props) => {
     return (
         <>
             <div class="gallery">
-                {data.map((val) => (
-                    <>
-                        <img
-                            src={val["urls"]["thumb"]}
-                            alt={val["alt_description"]}
-                            title={val["description"]}
-                        />
-                    </>
-                ))}
+             <ImageComponent data={data} />
             </div>
         </>
     );
