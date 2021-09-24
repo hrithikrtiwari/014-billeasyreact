@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import "react-image-gallery/styles/css/image-gallery.css";
 import Home from './pages/home';
 import GalleryProvider from './context/gallery-context';
 import {

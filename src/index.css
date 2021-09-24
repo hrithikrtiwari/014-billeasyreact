@@ -27,3 +27,9 @@ code {
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 255, 0.3);
     max-width: 15vw;
 }
+
+.carousel-image{
+    height: 90vh !important;
+    width: auto;
+    background-color: red !important;
+}
